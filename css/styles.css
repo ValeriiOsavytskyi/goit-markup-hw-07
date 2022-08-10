@@ -107,55 +107,38 @@ address {
   padding-bottom: 94px;
 }
 
-.btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  display: flex;
-  letter-spacing: 0.06em;
-  color: var(--btn-txt-cl);
-  background-color: var(--accent-txt-cl);
-  cursor: pointer;
-  border-radius: 4px;
-  bottom: none;
-  border: none;
-  padding: 10px 32px;
-
-  display: block;
-  margin: 0 auto;
-
-  transition: color var(--transition), background-color var(--transition);
-}
-
+/*
 .button {
   display: block;
   margin: 0 auto;
+
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
+*/
 
-.btn:hover,
-.btn:focus {
-  color: var(--btn-txt-cl);
-  background-color: var(--accent-txt-hvr-fcs-cl);
+.btn {
+  display: block;
+  margin: 0 auto;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
 }
 
 .btn-portfolio {
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--main-txt-cl);
   background-color: var(--btn-prtfl);
-  cursor: pointer;
-  border: none;
 
+  text-align: center;
   padding: 6px 22px;
-  border-radius: 4px;
 
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
@@ -168,19 +151,25 @@ address {
   box-shadow: var(--box-shadow-porfolio);
 }
 
-.header-link-logo-black {
+.logo {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: calc(31 / 26);
-  color: var(--logo-black);
-  display: block;
+
+  color: var(--accent-txt-cl);
 }
 
-.logo-blue {
-  font-family: 'Raleway';
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: var(--accent-txt-cl);
+.logo--black {
+  color: var(--logo-black);
+
+  margin-right: 93px;
+}
+
+.logo--white {
+  color: var(--btn-txt-cl);
+
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* -------------------  Header  ------------------------ */
@@ -193,67 +182,52 @@ address {
   display: flex;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
 
-.header-link-logo-black {
-  display: block;
-  margin-right: 93px;
-  padding: 0 auto;
+.nav {
 }
 
-.header-nav-list,
-.header-contacts-list {
+.nav__list {
   display: flex;
 }
 
-.header-nav-item {
+.nav__item {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
   margin-right: 50px;
 }
 
-.header-contacts-item {
-  margin-right: 30px;
-}
-
-.header-nav-item:nth-last-child(1),
-.header-contacts-item:nth-last-child(1) {
+.nav__item:nth-last-child(1) {
   margin-right: 0;
 }
 
-.header-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.header-link,
-.header-link-contacts {
+.nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-}
-
-.header-link {
   position: relative;
 
   transition: color var(--transition);
 }
 
-.header-link-studio::after,
-.header-link-portfolio::after {
+.nav__link--active {
+  color: var(--accent-txt-cl);
+}
+.nav__link--active::after {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 0;
+  bottom: -35px;
+  left: 0px;
 
   display: block;
   width: 100%;
@@ -263,29 +237,58 @@ address {
   background-color: var(--accent-txt-cl);
 }
 
-.header-link-contacts {
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent-txt-cl);
+}
+
+.contacts {
+}
+
+.contacts--list {
+  display: flex;
+}
+.contacts__item {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  margin-right: 30px;
+}
+
+.contacts__item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
   color: var(--hdr-cntcts-lst);
+
+  cursor: pointer;
 
   transition: color var(--transition);
 }
 
-.header-link-studio,
-.header-link-portfolio {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-txt-cl);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link-contacts:hover,
-.header-link-contacts:focus,
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-txt-cl);
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
-/*  ---------------- Эффективные решения  ---------------- */
+/*  ---------------- hero  ---------------- */
 
-.sentence-section {
+.hero {
+}
+
+.hero--section {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -301,7 +304,10 @@ address {
     url('../images/hero.jpg');
 }
 
-.sntns-hr {
+.hero__images {
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -309,19 +315,46 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--btn-txt-cl);
+}
+
+.hero__title--position {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-/*---------------------- Особенности  -------------------*/
+.hero__btn {
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--btn-txt-cl);
+  background-color: var(--accent-txt-cl);
 
-.container-features-list {
+  padding: 10px 32px;
+
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: var(--btn-txt-cl);
+  background-color: var(--accent-txt-hvr-fcs-cl);
+}
+
+/*---------------------- features  -------------------*/
+
+.features {
+}
+
+.features--list {
   display: flex;
   gap: 30px;
 }
 
-.features-icon-wrap {
+.features__item {
+}
+
+.features__image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,41 +365,44 @@ address {
   margin-bottom: 30px;
 }
 
-.main-features-title {
+.features__icon {
+}
+
+.features__title {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.main-features-text {
+.features__text {
   line-height: calc(24 / 14);
   color: var(--hdr-cntcts-lst);
 }
 
-/*------------------------- Занятия -----------------*/
+/*------------------------- activities -----------------*/
 
-.work {
+.work-activities {
   padding-top: 0px;
 }
 
-.main-occupation-title {
+.work-activities__title {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
 }
 
-.container-main-occupation-list {
+.activities {
   display: flex;
   gap: 30px;
 }
 
-.occupation-item {
+.activities__item {
   position: relative;
 }
 
-.occupation-div {
+.activities__div {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -382,27 +418,27 @@ address {
   background: var(--linear-gradient);
 }
 
-.occupation-text {
+.activities__text {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--btn-txt-cl);
 }
 
-/*  -------------------- Команда --------------------*/
+/*  -------------------- team --------------------*/
 
-.main-team {
+.team {
   background-color: var(--btn-prtfl);
 }
 
-.main-team-title-head {
+.team__title {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.container-main-team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
@@ -625,15 +661,6 @@ address {
   margin-right: 70px;
 }
 
-.footer-link-logo-white {
-  display: block;
-  font-family: 'Raleway';
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: var(--btn-txt-cl);
-  margin-bottom: 20px;
-}
-
 .address {
   font-style: inherit;
 }
@@ -648,6 +675,11 @@ address {
   color: var(--item-light);
 
   transition: color var(--transition);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-txt-cl);
 }
 
 .footer-item,
