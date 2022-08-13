@@ -1,8 +1,13 @@
 /* ----- utils styles ----- */
 
-@import'/scss/utils/variables';
+@import './utils/variables';
+
 
 /* ----- base styles ----- */
 
-@import '/scss/base/base';
+@import './base/base';
+@import './base/reset';
+
+
+
 
