@@ -1,17 +1,14 @@
+/*
 :root {
-  /*  ---  fonts  --- */
+ 
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-
-  /* --- text colors   --- */
 
   --btn-txt-cl: #ffffff;
   --main-txt-cl: #212121;
   --hdr-cntcts-lst: #757575;
   --accent-txt-cl: #2196f3;
-
-  /*  --- --- */
-
+  
   --porfolio-border-img: #eeeeee;
   --logo-black: #000000;
   --btn-prtfl: #f5f4fa;
@@ -30,8 +27,7 @@
   --border-footer-form: 1px solid rgba(255, 255, 255, 0.3);
   --modal-border: rgba(33, 33, 33, 0.2);
 
-  /* ---  box-shadow   --- */
-
+  
   --box-shadow-porfolio-btn: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --box-shadow-porfolio-list: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -44,7 +40,11 @@
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ----------------- others  --------------------------- */
+*/
+
+/* ----------------- base styles  --------------------------- */
+
+/*
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
@@ -56,8 +56,10 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+*/
 /*-------------------- reset styles --------------------------- */
 
+/*
 h1,
 h2,
 h3,
@@ -78,6 +80,7 @@ p {
   padding-left: 0;
   margin: 0;
 }
+*/
 
 /*----------------------- basy styles  ---------------------------- */
 
@@ -89,6 +92,7 @@ p {
   outline-offset: -2px;*/
 }
 
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -102,6 +106,8 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+*/
 
 img {
   display: block;

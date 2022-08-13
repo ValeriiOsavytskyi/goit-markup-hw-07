@@ -1,3 +1,4 @@
+
 {
     "liveSassCompile.settings.formats": [
         {
@@ -20,11 +21,12 @@
         "> 1%",
         "last 2 versions"
     ],
-    "liveServer.settings.port": 888,
-    "colorize.colorized_variables": [
-        "SASS"
-    ]
+    "liveServer.settings.port": 888
 }
+
+
+
+
 
 
 
