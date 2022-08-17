@@ -24,7 +24,7 @@
     />
 
     <!------------------  Custom styles -------------------------------------------------->
-    
+
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -75,7 +75,7 @@
         <div class="container">
           <span class="hero__images"></span>
           <h1 class="hero__title hero__title--position">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero__btn btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn__hero btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -85,15 +85,15 @@
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
 
-          <ul class="features features--list list">
+          <ul class="features list">
             <li class="features__item">
               <div class="features__image">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__subtittle subtittle">Внимание к деталям</h3>
-              <p class="features__text">
+              <h3 class="subtittle--features subtittle">Внимание к деталям</h3>
+              <p class="text-features">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
@@ -103,8 +103,8 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features__subtittle subtittle">Пунктуальность</h3>
-              <p class="features__text">
+              <h3 class="subtittle--features subtittle">Пунктуальность</h3>
+              <p class="text-features">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
@@ -114,8 +114,8 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__subtittle subtittle">Планирование</h3>
-              <p class="features__text">
+              <h3 class="subtittle--features subtittle">Планирование</h3>
+              <p class="text-features">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
@@ -125,8 +125,8 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__subtittle subtittle">Современные технологии</h3>
-              <p class="features__text">
+              <h3 class="subtittle--features subtittle">Современные технологии</h3>
+              <p class="text-features">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -142,19 +142,19 @@
             <li class="activities__item">
               <img src="./images/box1.jpg" alt="проєктирование" width="370" />
               <div class="activities__div">
-                <h3 class="activities__subtittle subtittle">Десктопні додатки</h3>
+                <h3 class="subtittle subtittle--activities">Десктопні додатки</h3>
               </div>
             </li>
             <li class="activities__item">
               <img src="./images/box2.jpg" alt="мобильные приложения" width="370" />
               <div class="activities__div">
-                <h3 class="activities__subtittle subtittle">Мобільні додатки</h3>
+                <h3 class="subtittle subtittle-activities">Мобільні додатки</h3>
               </div>
             </li>
             <li class="activities__item">
               <img src="./images/box3.jpg" alt="дизайн" width="370" />
               <div class="activities__div">
-                <h3 class="activities__subtittle subtittle">Дизайнерські рішення</h3>
+                <h3 class="subtittle subtittle-activities">Дизайнерські рішення</h3>
               </div>
             </li>
           </ul>
@@ -170,13 +170,9 @@
           <ul class="team__list list">
             <li class="team__item">
               <img src="./images/img1.jpg" alt="Product Designer" width="270" />
-              <div class="card-content team__card-content">
-                <h3 class="card-content__card-title card-title card-title--name">
-                  Игорь Демьяненко
-                </h3>
-                <p class="card-content__card-title card-title card-title--position">
-                  Product Designer
-                </p>
+              <div class="team__card card">
+                <h3 class="card__title card__title--name">Игорь Демьяненко</h3>
+                <p class="card__title card__title--position">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a
@@ -230,11 +226,9 @@
             </li>
             <li class="team__item">
               <img src="./images/img2.jpg" alt="Frontend Developer" width="270" />
-              <div class="card-content team__card-content">
-                <h3 class="card-content__card-title card-title card-title--name">Ольга Репина</h3>
-                <p class="card-content__card-title card-title card-title--position">
-                  Frontend Developer
-                </p>
+              <div class="team__card card">
+                <h3 class="card__title card__title--name">Ольга Репина</h3>
+                <p class="card__title card__title--position">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a
@@ -288,11 +282,9 @@
             </li>
             <li class="team__item">
               <img src="./images/img3.jpg" alt="Marketing" width="270" />
-              <div class="card-content team__card-content">
-                <h3 class="card-content__card-title card-title card-title--name">
-                  Николай Тарасов
-                </h3>
-                <p class="card-content__card-title card-title card-title--position">Marketing</p>
+              <div class="team__card card">
+                <h3 class="card__title card__title--name">Николай Тарасов</h3>
+                <p class="card__title card__title--position">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a
@@ -346,9 +338,9 @@
             </li>
             <li class="team__item">
               <img src="./images/img4.jpg" alt="UI Designer" width="270" />
-              <div class="card-content team__card-content">
-                <h3 class="card-content__card-title card-title card-title--name">Михаил Ермаков</h3>
-                <p class="card-content__card-title card-title card-title--position">UI Designer</p>
+              <div class="team__card card">
+                <h3 class="card__title card__title--name">Михаил Ермаков</h3>
+                <p class="card__title card__title--position">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a
@@ -407,7 +399,7 @@
       <!-- clients -->
 
       <section class="section">
-        <div class="clients container clients-container">
+        <div class="clients container">
           <h2 class="clients__uppertittle uppertittle">Постійні клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__item">
@@ -483,8 +475,8 @@
 
     <!------------------------Footer------------------------------------>
 
-    <footer class="footer">
-      <div class="container footer-container">
+    <footer class="footer-section">
+      <div class="container footer">
         <div class="footer__contacts">
           <a class="logo logo--white link" href="./index.html"
             ><span class="logo">Web</span>Studio</a
@@ -517,7 +509,7 @@
         <!----------------------  footer--social  --------------------------------->
 
         <div class="footer__social">
-          <p class="footer__social-subtittle subtittle">приєднуйтесь</p>
+          <p class="footer__social-subtittle subtittle--social subtittle">приєднуйтесь</p>
           <ul class="social-list list">
             <li class="social-list__item">
               <a
@@ -572,7 +564,7 @@
         <!-----------------------  footer-form  ---------------------------------->
 
         <div class="footer__form">
-          <p class="footer__form-subtittle subtittle">Підпишіться на розсилку</p>
+          <p class="footer__form-subtittle subtittle--form subtittle">Підпишіться на розсилку</p>
           <form class="footer__form-blok" autocomplete="off" novalidate>
             <label class="footer__form-label" for="user_email">
               <input
@@ -582,7 +574,7 @@
                 placeholder="E-mail"
                 required
             /></label>
-            <button class="footer__form-button form-button" type="submit">
+            <button class="footer__form-button btn-footer" type="submit">
               <svg class="footer__form-icon--send" width="24" height="24">
                 <use href="./images/icons.svg#footersend"></use></svg
               >Підписатися
@@ -596,68 +588,73 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="20" height="20">
+        <button class="btn-modal" data-modal-close>
+          <svg class="btn-modal__icon" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
-        <form class="register-form">
-          <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+        <form class="modal_register register-form">
+          <strong class="register-form__title title-register-form"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
 
-          <div class="register-form-group" role="group">
-            <lable class="register-form-wrap">
-              <span class="register-form-label">Ім'я</span>
-              <input class="register-form-input" type="text" name="user-name" required />
-              <svg class="register-form-icon" width="18" height="18">
+          <div class="register-form__group" role="group">
+            <lable class="register-form__wrap">
+              <span class="register-form__label label-register-form">Ім'я</span>
+              <input class="register-form__input" type="text" name="user-name" required />
+              <svg class="register-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#modalperson"></use>
               </svg>
             </lable>
 
-            <lable class="register-form-wrap">
-              <span class="register-form-label">Телефон</span>
-              <input class="register-form-input" type="tel" name="user-tel" required />
-              <svg class="register-form-icon" width="18" height="18">
+            <lable class="register-form__wrap">
+              <span class="register-form__label">Телефон</span>
+              <input class="register-form__input" type="tel" name="user-tel" required />
+              <svg class="register-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#modalphon"></use>
               </svg>
             </lable>
 
-            <lable class="register-form-wrap">
-              <span class="register-form-label">Пошта</span>
-              <input class="register-form-input" type="email" name="user-email" required />
-              <svg class="register-form-icon" width="18" height="18">
+            <lable class="register-form__wrap">
+              <span class="register-form__label">Пошта</span>
+              <input class="register-form__input" type="email" name="user-email" required />
+              <svg class="register-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#modalemail"></use>
               </svg>
             </lable>
 
-            <span class="register-form-label">Коментар</span>
+            <span class="register-form__label">Коментар</span>
             <textarea
-              class="register-form-message"
+              class="register-form__message"
               name=""
               rows="5"
               placeholder="Введіть текст"
             ></textarea>
           </div>
 
-          <label class="register-form-agreement">
+          <label class="register-form__agreement agreement-form">
             <input
-              class="register-checkbox visually-hidden"
+              class="agreement-form__checkbox visually-hidden"
               type="checkbox"
               name="agreement"
               required
             />
-            <svg class="register-icon" width="16" height="15">
-              <use class="register-icon-uncheck" href="./images/icons.svg#modalquadro"></use>
-              <use class="register-icon-check" href="./images/icons.svg#modalquadrovector"></use>
+            <svg class="agreement-form__icon icon-agreement" width="16" height="15">
+              <use class="icon-agreement__form-uncheck" href="./images/icons.svg#modalquadro"></use>
+              <use
+                class="icon-agreement__form-check"
+                href="./images/icons.svg#modalquadrovector"
+              ></use>
             </svg>
-            <span class="register-form-agreement-text"
-              >Погоджуюся з розсилкою та приймаю<a class="register-form-agreement-link" href=""
+            <span class="agreement-form__text text-agreement"
+              >Погоджуюся з розсилкою та приймаю<a class="text-agreement__link" href=""
                 >Умови договору</a
               ></span
             >
           </label>
 
-          <button class="register-form-btn" type="submit">Відправити</button>
+          <button class="btn-register-form" type="submit">Відправити</button>
         </form>
       </div>
     </div>
